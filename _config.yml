@@ -1,3 +1,7 @@
-name: Your New Jekyll Site
+name: Deng's Website
 markdown: redcarpet
 pygments: true
+timezone: Europe/London
+# http://jekyllrb.com/docs/frontmatter/
+# UTF-8 Character Encoding Warning
+encoding: UTF-8
