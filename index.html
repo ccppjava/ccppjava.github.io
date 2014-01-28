@@ -1,13 +1,24 @@
 ---
 layout: default
 title: Your New Jekyll Site
+script: js/controllers.js
+controller: PostListCtrl
 ---
 
 <div id="home">
   <h1>Blog Posts</h1>
+
+  <!--
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+  </ul>
+  -->
+  
+  <ul>
+  	<li ng-repeat="post in posts">
+  		<span>@{ post.date }@<span> | <a href="@{ post.url }@">@{ post.title }@</a>
+  	</li>
   </ul>
 </div>
